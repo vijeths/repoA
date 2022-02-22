@@ -14,5 +14,4 @@ jobs:
       - name: script
         run: |
              echo "Hello!! running 2nd workflow"
-             
-             
+               
