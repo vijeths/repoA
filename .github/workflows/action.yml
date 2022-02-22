@@ -1,4 +1,4 @@
-name: Check for push
+name: Check1 for push
 on:
     push:
       branches: [ master ]
