@@ -1,14 +1,16 @@
 name: Check for push
 on:
+    push:
+      branches: [ master ]
 
-  workflow_dispatch: 
+    workflow_dispatch: 
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: script
         run: |
              echo "Hello!! running 2nd workflow"
