@@ -14,4 +14,7 @@ jobs:
       - name: script
         run: |
              echo "Hello!! running 2nd workflow"
-               
+             curl -X POST https://api.github.com/repos/vijeths/repoB/actions/workflows/check.yml
+                  -s -H "Authorization: token ${{ secrets.GH_PAT }}" \
+                  -H "Accept application/vnd.github.v3+json" \
+                  -d '{"ref":"main"}'
