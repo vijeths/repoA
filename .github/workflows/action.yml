@@ -1,9 +1,10 @@
 name: Check1 for push
 on:
+    workflow_dispatch:
     push:
-      branches: [ master ]
+      branches: [ main ]
 
-    workflow_dispatch: 
+    
 
 jobs:
   build:
