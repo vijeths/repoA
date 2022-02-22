@@ -1,4 +1,4 @@
-name: Check1 for push
+name: Check for push
 on:
     workflow_dispatch:
     push:
