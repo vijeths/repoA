@@ -25,5 +25,5 @@ jobs:
         with:
           token: ${{ secrets.GH_PAT }}
           repository: vijeths/repoB
-          event-type: my-event
+          event-type: my-event(triggered by repo A)
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
