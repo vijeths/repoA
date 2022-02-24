@@ -12,13 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: script
-        run: |
-             echo "Hello!! running 2nd workflow"
-             curl -X POST https://api.github.com/repos/vijeths/repoB/actions/workflows/check.yml/dispatches \
-                  -s -H "Authorization: token ${{ secrets.GH_PAT }}" \
-                  -H "Accept application/vnd.github.v3+json" \
-                  -d '{"ref":"main"}'
+#       - name: script
+#         run: |
+#              echo "Hello!! running 2nd workflow"
+#              curl -X POST https://api.github.com/repos/vijeths/repoB/actions/workflows/check.yml/dispatches \
+#                   -s -H "Authorization: token ${{ secrets.GH_PAT }}" \
+#                   -H "Accept application/vnd.github.v3+json" \
+#                   -d '{"ref":"main"}'
                   
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
